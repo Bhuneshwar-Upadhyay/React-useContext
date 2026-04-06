@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import UserContext from '../context/userContext'
+import Login from './Login'
 
 const Navbar = () => {
+
+    const { user } = useContext(UserContext)
+
     return (
         <div className="navbar bg-base-100 shadow-sm">
             <div className="navbar-start">
@@ -18,7 +23,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="navbar-center">
-                <a className="btn btn-ghost text-xl">Context Api</a>
+                <a className="btn btn-ghost text-xl">{user ? user.username : <span>Context Api</span>}</a>
             </div>
             <div className="navbar-end">
                 <button className="btn btn-ghost btn-circle">
@@ -54,7 +59,20 @@ const Navbar = () => {
                         </svg>
                     </label>
                 </button>
+
+                <button className='px-3 py-2 border border-gray-900 bg-gray-900 cursor-pointer rounded' onClick={() => document.getElementById('my_modal_1').showModal()}>Login</button>
             </div>
+
+            <dialog id="my_modal_1" className="modal">
+                <div className="modal-box">
+                    <div className="w-full p-4">
+                        <form method="dialog" className='w-full'>
+                            <Login />
+                            <button className="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </div>
     )
 }
