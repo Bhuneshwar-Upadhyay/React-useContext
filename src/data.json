@@ -1,0 +1,38 @@
+[
+    {
+        "id": "SH-001",
+        "name": "AeroFlex Running Shoes",
+        "category": "Running",
+        "price": 2999,
+        "currency": "INR",
+        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=800&fit=crop",
+        "description": "Lightweight running shoes with breathable mesh and shock-absorbing sole."
+    },
+    {
+        "id": "SH-002",
+        "name": "UrbanWalk Casual Sneakers",
+        "category": "Casual",
+        "price": 2499,
+        "currency": "INR",
+        "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&h=800&fit=crop",
+        "description": "Stylish sneakers perfect for daily wear and street fashion."
+    },
+    {
+        "id": "SH-003",
+        "name": "TrailMaster Trekking Shoes",
+        "category": "Trekking",
+        "price": 3999,
+        "currency": "INR",
+        "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=800&h=800&fit=crop",
+        "description": "Durable trekking shoes with strong grip for rough terrains."
+    },
+    {
+        "id": "SH-004",
+        "name": "PowerLift Gym Trainers",
+        "category": "Gym",
+        "price": 2799,
+        "currency": "INR",
+        "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&h=800&fit=crop",
+        "description": "Flat sole trainers designed for gym workouts and stability."
+    }
+]
