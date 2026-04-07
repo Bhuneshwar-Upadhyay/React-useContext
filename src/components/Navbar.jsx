@@ -1,13 +1,13 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import UserContext from '../context/userContext'
 import Login from './Login'
 
-const Navbar = () => {
+const Navbar = ({ themeMode, setThemeMode }) => {
 
     const { user } = useContext(UserContext)
 
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar shadow-sm bg-white dark:bg-gray-900">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -35,7 +35,7 @@ const Navbar = () => {
                         <span className="badge badge-xs badge-primary indicator-item"></span>
                     </div>
                 </button>
-                <button className="btn btn-ghost btn-circle">
+                <button className="btn btn-ghost btn-circle" onClick={() => themeMode === 'light' ? setThemeMode('dark') : setThemeMode('light')}>
                     <label className="swap swap-rotate">
                         {/* this hidden checkbox controls the state */}
                         <input type="checkbox" className="theme-controller" value="synthwave" />
